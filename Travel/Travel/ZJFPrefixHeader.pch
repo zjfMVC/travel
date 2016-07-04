@@ -1,0 +1,57 @@
+//
+//  ZJFPrefixHeader.pch
+//  Travel
+//
+//  Created by qf1 on 16/1/23.
+//  Copyright (c) 2016年 qf1. All rights reserved.
+//
+
+#ifndef Travel_ZJFPrefixHeader_pch
+#define Travel_ZJFPrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "ZJFMyButton.h"
+#import "ZJFCreateView.h"
+
+#import "UIColor+BackColor.h"
+#import "ZJFDBManage.h"
+
+
+#import "NetDefine.h"
+#import "CommonDefin.h"
+/**第三方库头文件**/
+#import "FMDatabase.h"
+// 线程安全
+#import "FMDatabaseQueue.h"
+// 使用到RunTime机制所需要包含的
+#import <objc/runtime.h>
+// 第三方分享
+#import "UMSocialConfig.h"
+#import "UMSocialQQHandler.h"
+#import "UMSocial.h"
+#import "UMFeedback.h"
+
+#import "AFNetworking.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "MBProgressHUD.h"
+#import "MJRefresh.h"
+#import "Reachability.h"
+#import "JSONModel.h"
+#import "Masonry.h"
+#import "KeyboardManager.h"
+
+#endif
+
+// 调试打印开关 (1开启 0关闭)
+#define MS_DEBUG_ENABLE 1
+
+
+#if MS_DEBUG_ENABLE
+#define MSDebug( s, ... ) NSLog( @"[%@(method:%@ line:%d)] debug: %@", NSStringFromClass([self class]), NSStringFromSelector(_cmd), __LINE__, [NSString stringWithFormat:(s),##__VA_ARGS__] )
+#else
+#define MSDebug( s, ... )
+#endif
+
