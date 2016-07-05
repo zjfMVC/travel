@@ -152,6 +152,7 @@
 
         } else {
             NSLog(@"获取数据失败");
+            [self.tableView reloadData];
         }
         
     }];
