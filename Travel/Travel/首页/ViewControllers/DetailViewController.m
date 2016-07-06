@@ -170,7 +170,7 @@
  *  @return <#return value description#>
  */
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0.1;
+    return 0.01;
 }
 
 // 控制每个section中的row的高度
