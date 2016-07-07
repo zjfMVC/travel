@@ -53,7 +53,7 @@
 #pragma mark - 创建UI
 - (void)createUI
 {
-    self.view.backgroundColor = [UIColor whiteColor];
+    self.view.backgroundColor = [UIColor blueColor];
     // 设置自定义滚动视图
     _detailView = [[DetailView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - 64)];
     
